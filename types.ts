@@ -18,8 +18,8 @@ export interface Product {
   name: string
   price: string
   isFeatured: boolean
-  size: SizeLimit
-  color: ColorGamut
+  size: Size
+  color: Color
   images: Image[]
 }
 
