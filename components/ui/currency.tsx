@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-const formatter = new Intl.NumberFormat('en-us', {
+const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
 })
@@ -11,7 +11,7 @@ interface CurrencyProps {
   value?: string | number
 }
 
-const Currency: React.FC<CurrencyProps> = ({ value }) => {
+const Currency: React.FC<CurrencyProps> = ({ value = 0 }) => {
   const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
